@@ -46,7 +46,7 @@
 
             <h6>{{ $projects[$i]->description }}</h6>
 
-            <div class="d-flex align-items-start gap-3">
+            <div class="d-flex flex-wrap align-items-start gap-3">
                 @foreach ($projects[$i]->technologies as $technology)
                     <h4 class="badge {{$technology->bg_color}}">{{ $technology->name }}</h4>
                 @endforeach
