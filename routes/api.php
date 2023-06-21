@@ -19,4 +19,5 @@ use App\Http\Controllers\Api\ProjectController;
 //     return $request->user();
 // });
 
-Route::get("/", [ProjectController::class, "index"]);
+Route::get("/index", [ProjectController::class, "index"]);
+Route::get("/carousel", [ProjectController::class, "carousel"]);
